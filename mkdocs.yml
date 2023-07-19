@@ -1,0 +1,38 @@
+strict: true
+
+site_name: "yamldoc: Generate Markdown docs for YAML Schema"
+site_description: "Generate Markdown docs for YAML Schema"
+site_url: https://jonathanj.in/yamldoc
+
+repo_name: jinnovation/yamldoc
+repo_url: https://github.com/jinnovation/yamldoc
+
+nav:
+- Home: index.md
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  features:
+  - navigation.indexes
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.top
+
+markdown_extensions:
+- abbr
+- admonition
+- attr_list
+- pymdownx.details
+- pymdownx.snippets:
+    check_paths: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- smarty
+- tables
+- meta
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg

@@ -1,0 +1,27 @@
+$schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
+id: "http://example.org/schemas/foo/metadata-1.0.0"
+tag: "tag:example.org:foo/metadata-1.0.0"
+
+title: |
+  Metadata for the foo instrument.
+description: |
+  This stores some information about an exposure from the foo instrument.
+examples:
+  -
+    - A minimal description of an exposure.
+    - |
+        tag:example.org:foo/metadata-1.0.0
+          exposure_time: 0.001
+
+type: object
+properties:
+  investigator:
+    type: string
+    description: |
+      The name of the principal investigator who requested the
+      exposure.
+      s
+
+required:
+- investigator
+additionalProperties: true
